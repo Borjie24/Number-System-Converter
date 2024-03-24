@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Decimal Converter</title>
+
+      <!-------CSS------->
+      <link rel="stylesheet" href="styles.css">
+
+      <!-------box icons-->
+      <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+        rel="stylesheet"
+      />
+
+      <!----Fonts------>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+  <body>
+    <main>
+      <i class="ri-sun-fill icon" id="icon"></i>
+      <div class="container">
+        <h1 class="header">Number System Converter</h1>
+        <div class="categories">
+          <div class="label">
+            <label for="entry-dropdown1">Convert From: </label>
+              <select id="entry-dropdown1" name="options">
+                <option  value="decimal" selected>Decimal</option>
+                <option value="Binary">Binary</option>
+                <option value="Octal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+              </select>
+          </div>
+          
+          <div class="label">
+            <label for="entry-dropdown2">Convert To: </label>
+              <select id="entry-dropdown2" name="options">
+                <option value="decimal">Decimal</option>
+                <option value="Binary" selected>Binary</option>
+                <option value="Octal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+              </select>  
+            </div>
+
+        </div>
+        <div class="input">
+          <label for="number-input">Enter a number: </label>
+          <input value="" 
+          type="text"
+          name="number input"
+          id="number-input"
+          class="number-input"
+          />
+          
+        <button class="convert-btn" id="convert-btn">Convert</button>
+        </div>
+       
+      </div>
+      <div class="result">
+        <output id="result" for="number-input"></output>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

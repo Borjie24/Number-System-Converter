@@ -1,0 +1,165 @@
+:root{
+  --body-color: #fff;
+  --container: #f8f9fa;
+  --border: #ced4da;
+  --convert: #40916c;
+  --hover: #1b4332;
+  --font: #000;
+  --hover2: #6c757d;
+}
+
+.dark-mode{
+  --body-color: #212529;
+  --container: #343a40;
+  --border: #495057;
+  --font: #fff;
+ 
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-color);
+  color: var(--font);
+}
+
+.icon{
+  font-size: 40px;
+  position: absolute;
+  top: 10px; 
+  left: 10px;
+  padding: 5px;
+  margin: 5px 0 0 5px;
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--border);
+  transition: 0.3s ease;
+}
+
+.icon:hover{
+  background-color: var(--hover2);
+}
+
+
+.container{
+  width: 100%;
+  padding: 20px;
+  background-color: var(--container);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  
+}
+
+.header{
+  font-size: 42px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.categories{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.label{
+  flex: 1;
+  margin-right: 10px;
+}
+
+label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+select{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: var(--border);
+  background-color: var(--body-color);
+  color: var(--font);
+}
+
+.input{
+  margin-bottom: 10px;
+}
+
+.number-input {
+  width: calc(100% - 110px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: var(--body-color);
+  color: var(--font);
+}
+
+.convert-btn{
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--convert);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.convert-btn:hover{
+  background-color: var(--hover);
+}
+
+.result{
+  text-align: center; 
+  height: 70px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: 70%;
+  font-size: 30px;
+  color:var(--font);
+  background-color: var(--body-color);
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .header {
+    font-size: 25px;
+  }
+  .categories {
+    flex-direction: column;
+  }
+  .label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .number-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .convert-btn {
+    width: 100%;
+  }
+}
